@@ -3,19 +3,29 @@
 #include <stdlib.h>
 int main()
 {
-    int n;
-    printf("Enter the number of elements in the array: ");
-    scanf("%d", &n);
-    getchar();
-    char * name=malloc(n * sizeof(char));
-    char * new_name=malloc(n * sizeof(char));
+    char name[200];
     printf("Enter the elements of the array: ");
-    fgets(name, n, stdin);
+    fgets(name, sizeof(name), stdin);
     int length=strlen(name);
+    int end=length-1;
+    if(name[length-1]=='\n')
+    {
+        name[length-1]='\0';
+        length--;
+    }
     for(int i=length -1; i>=0; i--)
     {
-        new_name[length -1 -i]=name[i];
+        if(name[i]==' '|| i==0)
+            {
+            int start=i==0?0:i+1;
+            
+        for(int j=start;j<=end;j++)
+        {
+            printf("%c", name[j]);
+        }
+        printf(" ");
+        end=i-1;
     }
-    new_name[length]='\0';  // Null terminate the reversed string
-    printf("The reversed array is: %s", new_name);
+    }
+    return 0;
 }
