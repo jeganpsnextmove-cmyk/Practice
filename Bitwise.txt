@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter any number to identify: ");
+    scanf("%d",&a);
+    printf("the size of integer:");
+    printf("%d",sizeof(int));
+
+}
