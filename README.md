@@ -1,2 +1,2 @@
 # Practice
-Practicing C with important intervies questions
+Practicing C with important interviews questions
