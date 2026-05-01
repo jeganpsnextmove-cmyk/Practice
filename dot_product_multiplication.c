@@ -16,7 +16,6 @@ int main()
     int len=sizeof(a)/sizeof(a[0]);
     printf("the length of a is :%d",len);
     multiply(a,b,len);
-    return 0;
 }
 
 
