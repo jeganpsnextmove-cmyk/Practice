@@ -13,6 +13,7 @@ int main()
 {
     int a[]={1,2,3};
     int b[]={4,5,6};
+    //lenght of array
     int len=sizeof(a)/sizeof(a[0]);
     printf("the length of a is :%d",len);
     multiply(a,b,len);
